@@ -112,6 +112,19 @@ public class Util {
 
     }
 
+    static {
+        try {
+            for (Field color : Color.class.getDeclaredFields()) {
+                color.setAccessible(true);
+                if (color.getType() == Color.class) {
+                    colors.put(color.getName().toLowerCase(Locale.ENGLISH).replace("_", " "), (Color) color.get(null));
+                }
+            }
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static Bot botFrom(Object input) {
         if (input == null) {
             return null;
