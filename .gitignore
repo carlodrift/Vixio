@@ -1,7 +1,10 @@
 .idea/
+.gradle/
 *.iml
 *.iws
 target/
 .gitattributes
 .DS_Store
 out/
+build/
+Vixio-2.0.9-carlodrift.jar

@@ -34,7 +34,7 @@ repositories {
 
     //LavaPlayer
     maven {
-        url 'http://maven.sedmelluq.com'
+        url 'https://m2.dv8tion.net/releases'
     }
 
     mavenCentral() // for transitive dependencies

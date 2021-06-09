@@ -59,8 +59,7 @@ public class Vixio extends JavaPlugin {
 
     public static Vixio getInstance() {
         if (instance == null) {
-            Vixio vixio = new Vixio();
-            return vixio;
+            return new Vixio();
         }
         return instance;
     }
